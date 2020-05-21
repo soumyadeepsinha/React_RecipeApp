@@ -1,4 +1,4 @@
-![screenshot]('./src/images/RecipeScreenshoot.jpg')
+![screenshot](./src/images/RecipeScreenshoot.jpg)
 
 This project created with edamam api for Recipe Book
 
