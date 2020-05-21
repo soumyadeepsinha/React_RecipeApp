@@ -24,9 +24,12 @@ const App = () => {
     console.log(data.hits);
   }
 
+  // searching keywords
   const updatesearch = e => {
     setSearch(e.target.value);
   }
+
+  // search field will feature result
   const getsearch = e => {
     e.preventDefault();
     setQuery(search);
