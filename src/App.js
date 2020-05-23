@@ -2,14 +2,16 @@ import React, { useEffect, useState } from 'react';
 import Recipe from './Recipes';
 import './App.css';
 
+
 const App = () => {
   // use edamam.com to generate app id
-  const APP_ID = '';
+  const APP_ID = 'c9bc022a';
   // use edamam.com to generate app key
-  const APP_KEY = '';
+  const APP_KEY = 'cddaf378b3eabca5bc5aa9b9bb9f7e79';
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState('');
+  // embed search query
   const [query, setQuery] = useState('chicken')
 
   useEffect(() => {
@@ -50,7 +52,8 @@ const App = () => {
               title={recipe.recipe.label}
               calories={recipe.recipe.calories}
               image={recipe.recipe.image}
-              ingredients={recipe.recipe.ingredients} />
+              ingredients={recipe.recipe.ingredients}
+              url={recipe.recipe.url} />
           ))}
         </div>
       </div>

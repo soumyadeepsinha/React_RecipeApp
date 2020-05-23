@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './recipe.module.css';
 
-const Recipe = ({ title, calories, image, ingredients }) => {
+const Recipe = ({ title, calories, image, ingredients, url }) => {
   return (
     <React.Fragment>
       <div className={style.recipe}>
@@ -13,6 +13,7 @@ const Recipe = ({ title, calories, image, ingredients }) => {
           ))}
         </ol>
         <p>Containts <strong>{calories}</strong> Calories</p>
+        <a href={url}>Get Recipe</a>
         <img className={style.image} src={image} alt="" />
       </div>
     </React.Fragment>
