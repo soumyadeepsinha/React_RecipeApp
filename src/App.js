@@ -5,9 +5,9 @@ import './App.css';
 
 const App = () => {
   // use edamam.com to generate app id
-  const APP_ID = 'c9bc022a';
+  const APP_ID = 'your app id';
   // use edamam.com to generate app key
-  const APP_KEY = 'cddaf378b3eabca5bc5aa9b9bb9f7e79';
+  const APP_KEY = 'your api key';
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState('');
